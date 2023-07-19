@@ -1,0 +1,25 @@
+.block {
+    margin: 5px;
+    padding: 5px;
+    width: 800px;
+    height: 600px;
+    border-style:outset;
+    box-sizing:border-box;
+    border-radius: 10px;
+    display: block;
+    overflow: scroll;
+}
+
+.box {
+    background: #beb538;
+    margin: 5px;
+    padding: 5px;
+    max-width: 200px;
+    max-height: 200px;
+    border: 10px #d38237;
+    box-shadow: 3px 4px 10px #fbdb09;
+    border-style: outset;
+    border-radius: 50px;
+    display: inline-block;
+    opacity: 1
+}
