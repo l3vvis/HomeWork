@@ -1,3 +1,6 @@
+/* ==================== GLOBAL =============== */
+/* ==================== GLOBAL =============== */
+
 body {
     background: #181E34;
     font-family: "Montserrat", Arial, sans-serif;
@@ -6,7 +9,7 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 930px;
     margin: 0 auto;
     padding: 0 15px;
     line-height: 150%;
@@ -15,13 +18,224 @@ body {
 /* ==================== HEADER =============== */
 /* ==================== HEADER =============== */
 
+.header {
+    padding: 30px 0 36px;
+}
+
 .header-inner {
     display: flex;
     align-items: center;
 }
 
 .header-nav {
-
     margin-left: auto;
     display: flex;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-item {
+    margin-right: 30px;
+}
+
+.header-button {
+    display: flex;
+    padding: 14px 30px;
+    align-items: flex-start;
+    border-radius: 100px;
+    background-color: #fff;
+    color: #2766AE;
+    font-weight: 500;
+}
+
+/* ========================= MAIN ========================= */
+/* ========================= MAIN ========================= */
+
+/* ========================= HERO ========================= */
+
+.hero {
+    background: url(../images/back.jpg) 10% 100% / cover no-repeat;
+    padding: 120px 0;
+}
+
+.hero-title {
+    color: #FFF;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 436px;
+    color: #FFF;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.hero-text span {
+    color: #8fe9ff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    margin-bottom: 15px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+
+}
+
+.hero-button-one {
+    padding: 18px 30px;
+    border-radius: 100px;
+    background: linear-gradient(180deg, #00A4CC 0%, #2766AE 100%);
+    width: 260px;
+    height: auto;
+    text-align: center;
+}
+
+.hero-button-two {
+    padding: 18px 30px;
+    border-radius: 100px;
+    background: linear-gradient(129deg, #00A4CC 0%, #2766AE 100%);
+    width: 260px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom {
+    margin-bottom: 10px;
+}
+
+.hero-button-two img {
+    margin-left: 4px;
+}
+
+/* ========================= CARDS ========================= */
+
+.cards {
+    padding: 120px 0;
+}
+
+.cards-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.cards-text {
+    text-align: center;
+    max-width: 513px;
+    margin: 0 auto 60px;
+}
+
+.cards-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -14px;
+    margin-bottom: -28px;
+    padding-bottom: 30px;
+}
+
+.cards-flex-item {
+    margin-bottom: 28px;
+    padding: 0 14px;
+    flex: 0 0 25%;
+}
+
+.cards-flex-inner {
+    background: #197CB8;
+    border: 2px solid #176BAE;
+    box-shadow: 4px 4px 13px rgba(5, 13, 41, 0.76);
+    border-radius: 16px;
+    padding: 28px 15px;
+}
+
+.cards-flex-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cards-flex-text {
+    text-align: center;
+}
+
+.cards-button {
+    display: block;
+    padding: 18px 30px;
+    border-radius: 100px;
+    background: linear-gradient(180deg, #00A4CC 0%, #2766AE 100%);
+    max-width: 436px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ========================= FOOTER ========================= */
+/* ========================= FOOTER ========================= */
+
+.footer {
+    border-top: 1px solid #323952;
+    padding: 60px 0;
+}
+
+.footer-inner {
+    display: flex;
+}
+
+.footer-desc {
+    max-width: 267px;
+    margin-right: auto;
+}
+
+.footer-desc a {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.footer-col {
+    max-width: 204px;
+    width: 100%;
+}
+
+.footer-col-margin {
+    margin-right: 28px;
+}
+
+.footer-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-item {
+    margin-bottom: 10px;
 }
