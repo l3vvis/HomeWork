@@ -1,0 +1,77 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 5rem;
+}
+
+.wrapper {
+    padding: 50px;
+    min-height: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-wrapper,
+.title {
+    margin-bottom: 100px;
+}
+
+.title {
+    text-align: center;
+}
+
+.block-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+    background: linear-gradient(210deg, #34bb34, rgb(34, 128, 0));
+    height: 300px;
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.text {
+    font-size: 2rem;
+}
+
+/* ====================================================== */
+
+.title::before {
+    content: "до ";
+}
+.title::after {
+    content: " после";
+}
+.block-wrapper {
+    position: relative;
+}
+.block-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 150px;
+    display: block;
+    width: 100px;
+    height: 150px;
+    background: #fff;
+}
+/* .block-wrapper:hover::before {
+    background: gold;
+} */
+.block-wrapper::before:hover {
+    /* don't work */
+}
+
+.text::first-line {
+    color: bisque;
+}
+.text::first-letter {
+    color: rgb(17, 201, 33);
+}
