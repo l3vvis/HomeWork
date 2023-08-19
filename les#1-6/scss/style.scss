@@ -1,0 +1,29 @@
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+
+/*=======================*/
+
+.contact {
+    background: $blue-bg-color;
+}
+
+.button {
+    background: $general-bg-color;
+}
+
+@media (max-width: $mobile) {
+    
+    .contact {
+        background: red;
+    }
+}
+
+/*=======================*/
+
+.privacy {
+    @import 'pages/privacy';
+}
+
+@import 'pages/home';
+@import 'pages/blog';
