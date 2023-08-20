@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+}
+
+.row, .button {
+  position: relative;
+}
+.row::before, .button::before {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: red;
+}
+
+/*=======================*/
+/*=======================*/
+/*=======================*/
+/*=======================*/
+/*=======================*/
+.row {
+  top: auto;
+  bottom: auto;
+}
+
+.column {
+  position: relative;
+  width: 46.1538461538%;
+}
+.column::after {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/*=======================*/
+.privacy h1 {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.privacy p li {
+  background-color: #fff;
+}
+
+section {
+  color: aliceblue;
+  background: none;
+}

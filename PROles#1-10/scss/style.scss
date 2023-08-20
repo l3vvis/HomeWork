@@ -1,0 +1,95 @@
+@import 'reset'; //обнуление стилей
+@import 'vars'; //переменные
+@import 'mixins'; //миксины и шаблоны
+
+/*=======================*/
+
+// .testimonials {
+//     ul {
+//         padding-top: 50px;
+//     }
+//     .webp & {
+//         color: #000
+//     }
+// }
+/*=======================*/
+
+// .testimonials {
+//     ul {
+//         padding-top: 20px;
+//     }
+//     background-color: {
+//         color: #333;
+//     }
+
+//     @media screen {
+//         color: #fff;
+//     }
+// }
+
+// @media (min-width: 400px) {
+//     @media (max-width: 500px) {
+//         .about {
+//             color: #000;
+//         }
+// }
+// }
+/*=======================*/
+
+// .about {
+//     & heading {
+//         color: aqua;
+//     }
+//     &__heading {
+//         color: #c9dbdb;
+//         &--color-blue {
+//             color: #20126d;
+//         }
+//     }
+// }
+
+/*=======================*/
+
+// .button {
+//     &::before {
+//         @extend %pos-center;
+//     }
+// }
+
+// .heading {
+//     &::after {
+//         @extend %pos-center;
+//     }
+//     @extend %hidden;
+// }
+
+/*=======================*/
+
+.button {
+    @extend %red-circle;
+}
+
+.row {
+    @extend %red-circle;
+    top: auto;
+    bottom: auto;
+}
+
+.column {
+    position: relative;
+
+    &::after {
+        @include pos(70, 30);
+    }
+
+    width: 600px/1300px * 100%;
+}
+
+
+/*=======================*/
+.privacy {
+    @import 'pages/privacy';
+}
+
+@import 'pages/home';
+@import 'pages/blog';
